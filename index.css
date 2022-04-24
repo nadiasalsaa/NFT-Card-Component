@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    /* Main BG */
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    /* Card BG */
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--very-dark-blue-main);
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+}
+
+.card{
+    margin: auto;
+    background-color: var(--very-dark-blue-card);
+    width: 310px;
+    height: 590px;
+    padding: 1.25rem;
+    margin-top: 21px;
+    border-radius: 1rem;
+    margin-bottom: 20px;
+}
+
+.card-equil{
+    position: relative;
+}
+.card-equil img {
+    /* margin: auto; */
+    width: 100%;
+}
+
+.card-equil div {
+    position: absolute;
+    top: 0;
+    background-color: var(--cyan);
+    width: 100%;
+    height: calc(100% - 4px);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card-equil div:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.card-equil div img {
+    width: 48px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.card h2{
+    font-weight: 600;
+    color: var(--white);
+    margin-top: 15px !important;
+    margin-bottom: 0px !important;
+}
+
+.card h2:hover{
+    color: var(--cyan);
+}
+
+.card p{
+    color: var(--soft-blue);
+    margin-top: 16px !important;
+    margin-bottom: 0px !important;
+    font-weight: 400;
+}
+.card ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    border-bottom: 2px solid var(--very-dark-blue-line);
+    padding: 26px 0;
+    margin-bottom: 0px !important;
+}
+
+.eth{
+    font-weight: 400;
+    color: var(--cyan);
+}
+
+.eth img {
+    margin-right: 0.3rem;
+}
+
+.date {
+    font-weight: 400;
+    color: var(--soft-blue);
+}
+
+.date img{
+    margin-right: 0.3rem;
+}
+
+.by{
+    margin-top: 15px !important;
+    display: flex;
+    margin: 20px 0px;
+}
+.by img{
+    width: 3rem;
+    border-radius: 50%;
+    border: 2px solid var(--white);
+}
+.by p {
+    margin-left: 15px;
+    font-weight: 300;
+}
+
+.by p span{
+    color: var(--white);
+}
+
+.by p span:hover{
+    color: var(--cyan);
+}
+
+.attribution { 
+    color: var(--white);
+    font-size: 15px !important; 
+    text-align: center; 
+}
+.attribution a { 
+    color: var(--cyan); 
+}
