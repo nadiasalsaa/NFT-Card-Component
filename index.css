@@ -26,6 +26,7 @@ body {
     margin-top: 21px;
     border-radius: 1rem;
     margin-bottom: 20px;
+    box-shadow: 3px 3px 6px 3px black;
 }
 
 .card-equil{
@@ -136,4 +137,14 @@ body {
 }
 .attribution a { 
     color: var(--cyan); 
+}
+
+@media (max-width: 768px) {
+    .card{
+        width: 80%;
+        height: 40%;
+    }
+    .by{
+        margin-bottom: 0px !important;
+    }
 }
